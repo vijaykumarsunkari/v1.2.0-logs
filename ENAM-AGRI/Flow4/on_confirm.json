@@ -1,82 +1,131 @@
 {
     "context": {
-        "ttl": "PT30S",
-        "city": "std:040",
+        "city": "std:0124",
         "action": "on_confirm",
-        "bap_id": "enambuyer-ondc-stg.bitxiatech.com",
-        "bpp_id": "enamseller-ondc-stg.bitxiatech.com",
+        "bap_id": "buypreprod.enam.gov.in",
+        "bpp_id": "sellpreprod.enam.gov.in",
         "domain": "ONDC:AGR11",
-        "bap_uri": "https://enambuyer-ondc-stg.bitxiatech.com/ondc/v1",
-        "bpp_uri": "https://enamseller-ondc-stg.bitxiatech.com",
+        "bap_uri": "https://buypreprod.enam.gov.in/ondc/v1",
+        "bpp_uri": "https://sellpreprod.enam.gov.in/ondc/v1",
         "country": "IND",
-        "timestamp": "2024-05-18T10:37:29.141Z",
-        "message_id": "fb6dbe52-31a5-48eb-9a04-9a8885482152",
+        "timestamp": "2024-07-15T08:02:59.201Z",
+        "message_id": "1eced767-fd66-43e2-8d93-7ee3a21753a3",
         "core_version": "1.2.0",
-        "transaction_id": "59b2a96f-1b43-4548-ab7e-d89620d90b8c"
+        "transaction_id": "3433dfdc-c8b5-4727-b39b-749521b9c609"
     },
     "message": {
         "order": {
-            "id": "453",
+            "id": "1773",
             "tags": [
-                {
-                    "code": "bap_terms",
-                    "list": [
-                        {
-                            "code": "tax_number",
-                            "value": "GSTIN1234567890"
-                        }
-                    ]
-                },
                 {
                     "code": "bpp_terms",
                     "list": [
                         {
                             "code": "tax_number",
-                            "value": "14A00000001G1Z4"
+                            "value": "06AADCH5529B1ZY"
+                        },
+                        {
+                            "code": "provider_tax_number",
+                            "value": "BBCDF1234E"
+                        },
+                        {
+                            "code": "np_type",
+                            "value": "MSN"
+                        }
+                    ]
+                },
+                {
+                    "code": "bap_terms",
+                    "list": [
+                        {
+                            "code": "tax_number",
+                            "value": " 22AAAAA0000A1Z5"
                         }
                     ]
                 }
             ],
             "items": [
                 {
-                    "id": "361",
+                    "id": "1784",
                     "quantity": {
-                        "count": 2,
-                        "selected": {
-                            "count": 2
-                        }
+                        "count": 2
                     },
-                    "fulfillment_id": "156"
+                    "fulfillment_id": "246"
                 }
             ],
             "quote": {
-                "ttl": "PT24H",
+                "ttl": "P1D",
                 "price": {
-                    "value": "500.0",
+                    "value": "242.4",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
+                        "price": {
+                            "value": "0.0",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "246",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "2.4",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "1784",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "tags": [
+                                {
+                                    "code": "quote",
+                                    "list": [
+                                        {
+                                            "code": "type",
+                                            "value": "item"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "offer",
+                                    "list": [
+                                        {
+                                            "code": "id",
+                                            "value": "BAYG4WHWD5"
+                                        },
+                                        {
+                                            "code": "type",
+                                            "value": "discount"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "price": {
+                            "value": "-60.0",
+                            "currency": "INR"
+                        },
+                        "title": "Offer",
+                        "@ondc/org/item_id": "1784",
+                        "@ondc/org/title_type": "offer"
+                    },
+                    {
                         "item": {
                             "price": {
-                                "value": "250.0",
+                                "value": "150.0",
                                 "currency": "INR"
-                            },
-                            "quantity": {
-                                "maximum": {
-                                    "count": "10000"
-                                },
-                                "available": {
-                                    "count": "6"
-                                }
                             }
                         },
                         "price": {
-                            "value": "500.0",
+                            "value": "300.0",
                             "currency": "INR"
                         },
-                        "title": "King Fish",
-                        "@ondc/org/item_id": "361",
+                        "title": "Baygon",
+                        "@ondc/org/item_id": "1784",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 2
@@ -85,121 +134,117 @@
                 ]
             },
             "state": "Created",
+            "offers": [
+                {
+                    "id": "BAYG4WHWD5",
+                    "tags": [
+                        {
+                            "code": "selection",
+                            "list": [
+                                {
+                                    "code": "apply",
+                                    "value": "yes"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "billing": {
-                "name": "Sumit",
-                "email": "params966@gmail.com",
-                "phone": "8475950505",
+                "name": "Sara Shafique",
+                "email": "enam.helpdesk@gmail.com",
+                "phone": "8810893499",
                 "address": {
-                    "city": "Gurugram",
-                    "door": "541",
-                    "name": "Residence",
-                    "ward": "Fazilpur",
-                    "state": "Haryana",
-                    "street": "Sohna",
+                    "city": "Mau",
+                    "name": "Default Address",
+                    "state": "Uttar Pradesh",
                     "country": "IND",
-                    "building": "Flora",
-                    "locality": "Fatehpur",
-                    "area_code": "124109"
+                    "building": "House, 19",
+                    "locality": "Qwe, Qazi, Qert",
+                    "area_code": "275101"
                 },
-                "created_at": "2024-05-14T09:20:44.503Z",
-                "updated_at": "2024-05-14T09:20:44.503Z"
+                "created_at": "2024-07-15T08:02:27.000Z",
+                "updated_at": "2024-07-15T08:02:27.000Z"
             },
             "payment": {
-                "uri": "https://ondc.transaction.com/payment",
-                "type": "ON-FULFILLMENT",
+                "type": "ON-ORDER",
                 "params": {
-                    "amount": "500.0",
+                    "amount": "242.4",
                     "currency": "INR",
-                    "transaction_id": "201"
+                    "transaction_id": "1767"
                 },
-                "status": "NOT-PAID",
-                "collected_by": "BPP",
+                "status": "PAID",
+                "collected_by": "BAP",
                 "@ondc/org/settlement_basis": "delivery",
                 "@ondc/org/settlement_window": "PT24H",
                 "@ondc/org/settlement_details": [
                     {
-                        "bank_name": "HDFC",
-                        "branch_name": "Chandigarh",
-                        "settlement_type": "neft",
-                        "beneficiary_name": "Enum",
+                        "bank_name": "IDFC",
+                        "branch_name": "Gurgaon",
+                        "settlement_type": "rtgs",
+                        "beneficiary_name": "enam",
                         "settlement_phase": "sale-amount",
-                        "settlement_ifsc_code": "HDFC0000887",
+                        "settlement_ifsc_code": "IDFB0020101",
                         "settlement_counterparty": "seller-app",
-                        "settlement_bank_account_no": "50100987654123"
+                        "settlement_bank_account_no": "21483543961"
                     }
                 ],
-                "@ondc/org/withholding_amount": "3.0",
+                "@ondc/org/withholding_amount": "0",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+                "@ondc/org/buyer_app_finder_fee_amount": "0.0"
             },
             "provider": {
-                "id": "74",
+                "id": "116",
                 "locations": [
                     {
-                        "id": "217"
+                        "id": "288"
                     }
                 ]
             },
-            "created_at": "2024-05-18T10:37:29.043Z",
-            "updated_at": "2024-05-18T10:37:29.139Z",
-            "cancellation": {},
+            "created_at": "2024-07-15T08:02:59.028Z",
+            "updated_at": "2024-07-15T08:02:59.201Z",
             "fulfillments": [
                 {
-                    "id": "156",
+                    "id": "246",
                     "end": {
                         "person": {
-                            "name": "param abc"
+                            "name": "Sara Shafique"
                         },
                         "contact": {
-                            "email": "params966@gmail.com",
-                            "phone": "8978560404"
+                            "email": "enam.helpdesk@gmail.com",
+                            "phone": "8810893499"
                         },
                         "location": {
-                            "id": "208",
-                            "gps": "12.453544,77.928379",
+                            "gps": "25.9400000,83.5500000",
                             "address": {
-                                "city": "Ghaziabad",
-                                "door": "9th floor",
-                                "name": "905 Ebony A",
-                                "ward": "Hindon",
+                                "city": "Mau",
+                                "name": "Default Address",
                                 "state": "Uttar Pradesh",
-                                "street": "Shalimar",
                                 "country": "IND",
-                                "building": " Shalimar Garden",
-                                "locality": "Shalimar",
-                                "area_code": "201005"
+                                "building": "House, 19",
+                                "locality": "Qwe, Qazi, Qert",
+                                "area_code": "275101"
                             }
                         }
                     },
-                    "tags": [
-                        {
-                            "code": "rto_action",
-                            "list": [
-                                {
-                                    "code": "return_to_origin",
-                                    "value": "Yes"
-                                }
-                            ]
-                        }
-                    ],
-                    "type": "Self-Pickup",
+                    "type": "Delivery",
                     "start": {
                         "contact": {
-                            "email": "test@gmai.com",
-                            "phone": "2222222222"
+                            "email": "enam.helpdesk@gmail.com",
+                            "phone": "8978560404"
                         },
                         "location": {
-                            "id": "217",
+                            "id": "288",
                             "gps": "17.4739167, 78.5118889",
                             "address": {
-                                "city": "HYDERABAD",
+                                "city": "AGWANA KALAN",
                                 "state": "Telangana",
-                                "street": "AGWANA KALAN",
+                                "street": "HYDERABAD",
                                 "locality": "AMBERPET",
                                 "area_code": "500084"
                             },
                             "descriptor": {
-                                "name": "AMBERPET-AGWANA"
+                                "name": "Bhui Store kondapur"
                             }
                         }
                     },
@@ -210,7 +255,7 @@
                     },
                     "tracking": false,
                     "@ondc/org/TAT": "PT48H",
-                    "@ondc/org/provider_name": "Sumit Kumar"
+                    "@ondc/org/provider_name": "Bhui Store kondapur"
                 }
             ]
         }

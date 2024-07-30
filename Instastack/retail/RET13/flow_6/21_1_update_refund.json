@@ -6,9 +6,9 @@
     "core_version": "1.2.0",
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
-    "transaction_id": "b391b94a-ac91-4c1d-bbd1-ee0fe223ecfc",
-    "message_id": "81e9a301-1dee-4dcf-9548-136b3b89d917",
-    "timestamp": "2024-05-14T11:50:38.899Z",
+    "transaction_id": "5be2c71e-9c95-455b-82bd-41242e963053",
+    "message_id": "6d5cd40f-4049-4615-8d94-6304c89850af",
+    "timestamp": "2024-07-29T08:45:46.156Z",
     "bpp_id": "seller.instastack.io",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
     "city": "std:022"
@@ -16,10 +16,10 @@
   "message": {
     "update_target": "payment",
     "order": {
-      "id": "2024-05-14-175830",
+      "id": "2024-07-29-567729",
       "fulfillments": [
         {
-          "id": "66434f4fe0d66228628fb54e",
+          "id": "66a755f7be13d88aa535061a",
           "type": "Return"
         }
       ],
@@ -29,8 +29,8 @@
             "settlement_counterparty": "buyer",
             "settlement_phase": "refund",
             "settlement_type": "neft",
-            "settlement_amount": "1078",
-            "settlement_timestamp": "2024-05-14T11:50:38.899Z"
+            "settlement_amount": "499",
+            "settlement_timestamp": "2024-07-29T08:45:46.156Z"
           }
         ]
       }

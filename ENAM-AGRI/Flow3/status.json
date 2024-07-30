@@ -1,20 +1,20 @@
 {
     "context": {
         "ttl": "PT30S",
-        "city": "std:040",
+        "city": "std:0124",
         "action": "status",
-        "bap_id": "enambuyer-ondc-stg.bitxiatech.com",
-        "bpp_id": "enamseller-ondc-stg.bitxiatech.com",
+        "bap_id": "buypreprod.enam.gov.in",
+        "bpp_id": "sellpreprod.enam.gov.in",
         "domain": "ONDC:AGR11",
-        "bap_uri": "https://enambuyer-ondc-stg.bitxiatech.com/ondc/v1",
-        "bpp_uri": "https://enamseller-ondc-stg.bitxiatech.com",
+        "bap_uri": "https://buypreprod.enam.gov.in/ondc/v1",
+        "bpp_uri": "https://sellpreprod.enam.gov.in/ondc/v1",
         "country": "IND",
-        "timestamp": "2024-05-18T10:19:43.332Z",
-        "message_id": "cb8e9fdf-a3b5-4154-9323-1c8b6568bb74",
+        "timestamp": "2024-07-15T07:27:06.478Z",
+        "message_id": "53059651-5b66-4abc-b327-b1b820b22ebd",
         "core_version": "1.2.0",
-        "transaction_id": "8ccc6f4e-0f8d-4dd0-91a9-50e2ea8624bb"
+        "transaction_id": "b1324845-99df-4be0-9411-5230da5f1b94"
     },
     "message": {
-        "order_id": "452"
+        "order_id": "1772"
     }
 }

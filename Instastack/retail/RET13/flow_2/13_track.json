@@ -6,15 +6,15 @@
     "core_version": "1.2.0",
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
-    "transaction_id": "d4909ba3-e3f9-47f5-8b3f-c33a79048418",
-    "message_id": "c36ed0d1-8b7d-4803-aebc-729e38ddda83",
-    "timestamp": "2024-05-14T09:10:33.231Z",
+    "transaction_id": "9484565d-23c6-42e9-a78b-93de8cb00056",
+    "message_id": "bdf278dd-7bc0-4e88-8936-aa38f36fc170",
+    "timestamp": "2024-07-29T06:46:46.037Z",
     "ttl": "PT30S",
     "bpp_id": "seller.instastack.io",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
     "city": "std:022"
   },
   "message": {
-    "order_id": "2024-05-14-128787"
+    "order_id": "2024-07-29-858352"
   }
 }
